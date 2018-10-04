@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Lista Archivos</title>
+		<meta name="description" content="Static &amp; Dynamic Tables" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="icon" type="image/png" href="assets/images/file.png" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- Nuevos -->
+
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+
+	</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default          ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-header pull-left">
+					<a href="index.html" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							  2COPY
+						</small>
+					</a>
+				</div>
+
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+
+						<li class="purple dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-exclamation-triangle"></i>
+									8 Notifications
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar navbar-pink">
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+														New Comments
+													</span>
+													<span class="pull-right badge badge-info">+12</span>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<i class="btn btn-xs btn-primary fa fa-user"></i>
+												Bob just signed up as an editor ...
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
+														New Orders
+													</span>
+													<span class="pull-right badge badge-success">+8</span>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
+														Followers
+													</span>
+													<span class="pull-right badge badge-info">+11</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="#">
+										See all notifications
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="profile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-power-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-signal"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>
+						</button>
+
+						<button class="btn btn-warning">
+							<i class="ace-icon fa fa-users"></i>
+						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="">
+						<a href="index.html">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> Entrada </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> Archivos </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="form-elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Subir Nuevo Archivo
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="tables.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Lista de archivos
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Vaciar Carpeta
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="historial.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Historial
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tag"></i>
+							<span class="menu-text"> Mi Perfil </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Perfil
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="inbox.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Mensajes
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="pricing.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Actividad reciente
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="Index.html">Inicio</a>
+							</li>
+
+							<li>
+								<a href="#">Usuario</a>
+							</li>
+							<li class="active">Lista de archivos</li>
+						</ul><!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="ace-settings-container" id="ace-settings-container">
+							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+								<i class="ace-icon fa fa-cog bigger-130"></i>
+							</div>
+
+							<div class="ace-settings-box clearfix" id="ace-settings-box">
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<div class="pull-left">
+											<select id="skin-colorpicker" class="hide">
+												<option data-skin="no-skin" value="#438EB9">#438EB9</option>
+												<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+												<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+												<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+											</select>
+										</div>
+										<span>&nbsp; Choose Skin</span>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-navbar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-breadcrumbs" autocomplete="off" />
+										<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off" />
+										<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container" autocomplete="off" />
+										<label class="lbl" for="ace-settings-add-container">
+											Inside
+											<b>.container</b>
+										</label>
+									</div>
+								</div><!-- /.pull-left -->
+
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off" />
+										<label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off" />
+										<label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" autocomplete="off" />
+										<label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+									</div>
+								</div><!-- /.pull-left -->
+							</div><!-- /.ace-settings-box -->
+						</div><!-- /.ace-settings-container -->
+
+						<div class="page-header">
+							<h1>
+								Lista de archivos
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									Mostrar archivos de usuario
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+
+								<div class="row">
+									<div class="col-xs-12">
+										
+										<div class="table-header">
+											Resultados
+										</div>
+
+										<!-- div.table-responsive -->
+
+										<!-- div.dataTables_borderWrap -->
+										<div>
+											 <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th>Archivos</th>
+                          <th>Controles</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Tiger</td>
+                          <td>Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                          <td>5421</td>
+                          <td>t.nixon@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Garrett</td>
+                          <td>Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                          <td>8422</td>
+                          <td>g.winters@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton</td>
+                          <td>Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009/01/12</td>
+                          <td>$86,000</td>
+                          <td>1562</td>
+                          <td>a.cox@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Cedric</td>
+                          <td>Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                          <td>6224</td>
+                          <td>c.kelly@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Airi</td>
+                          <td>Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008/11/28</td>
+                          <td>$162,700</td>
+                          <td>5407</td>
+                          <td>a.satou@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Brielle</td>
+                          <td>Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012/12/02</td>
+                          <td>$372,000</td>
+                          <td>4804</td>
+                          <td>b.williamson@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Herrod</td>
+                          <td>Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012/08/06</td>
+                          <td>$137,500</td>
+                          <td>9608</td>
+                          <td>h.chandler@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Rhona</td>
+                          <td>Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010/10/14</td>
+                          <td>$327,900</td>
+                          <td>6200</td>
+                          <td>r.davidson@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Colleen</td>
+                          <td>Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009/09/15</td>
+                          <td>$205,500</td>
+                          <td>2360</td>
+                          <td>c.hurst@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Sonya</td>
+                          <td>Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008/12/13</td>
+                          <td>$103,600</td>
+                          <td>1667</td>
+                          <td>s.frost@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jena</td>
+                          <td>Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008/12/19</td>
+                          <td>$90,560</td>
+                          <td>3814</td>
+                          <td>j.gaines@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Quinn</td>
+                          <td>Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013/03/03</td>
+                          <td>$342,000</td>
+                          <td>9497</td>
+                          <td>q.flynn@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Charde</td>
+                          <td>Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008/10/16</td>
+                          <td>$470,600</td>
+                          <td>6741</td>
+                          <td>c.marshall@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Haley</td>
+                          <td>Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012/12/18</td>
+                          <td>$313,500</td>
+                          <td>3597</td>
+                          <td>h.kennedy@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Tatyana</td>
+                          <td>Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010/03/17</td>
+                          <td>$385,750</td>
+                          <td>1965</td>
+                          <td>t.fitzpatrick@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Michael</td>
+                          <td>Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012/11/27</td>
+                          <td>$198,500</td>
+                          <td>1581</td>
+                          <td>m.silva@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Paul</td>
+                          <td>Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010/06/09</td>
+                          <td>$725,000</td>
+                          <td>3059</td>
+                          <td>p.byrd@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Gloria</td>
+                          <td>Little</td>
+                          <td>Systems Administrator</td>
+                          <td>New York</td>
+                          <td>59</td>
+                          <td>2009/04/10</td>
+                          <td>$237,500</td>
+                          <td>1721</td>
+                          <td>g.little@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Bradley</td>
+                          <td>Greer</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>41</td>
+                          <td>2012/10/13</td>
+                          <td>$132,000</td>
+                          <td>2558</td>
+                          <td>b.greer@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Dai</td>
+                          <td>Rios</td>
+                          <td>Personnel Lead</td>
+                          <td>Edinburgh</td>
+                          <td>35</td>
+                          <td>2012/09/26</td>
+                          <td>$217,500</td>
+                          <td>2290</td>
+                          <td>d.rios@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jenette</td>
+                          <td>Caldwell</td>
+                          <td>Development Lead</td>
+                          <td>New York</td>
+                          <td>30</td>
+                          <td>2011/09/03</td>
+                          <td>$345,000</td>
+                          <td>1937</td>
+                          <td>j.caldwell@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Yuri</td>
+                          <td>Berry</td>
+                          <td>Chief Marketing Officer (CMO)</td>
+                          <td>New York</td>
+                          <td>40</td>
+                          <td>2009/06/25</td>
+                          <td>$675,000</td>
+                          <td>6154</td>
+                          <td>y.berry@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Caesar</td>
+                          <td>Vance</td>
+                          <td>Pre-Sales Support</td>
+                          <td>New York</td>
+                          <td>21</td>
+                          <td>2011/12/12</td>
+                          <td>$106,450</td>
+                          <td>8330</td>
+                          <td>c.vance@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Doris</td>
+                          <td>Wilder</td>
+                          <td>Sales Assistant</td>
+                          <td>Sidney</td>
+                          <td>23</td>
+                          <td>2010/09/20</td>
+                          <td>$85,600</td>
+                          <td>3023</td>
+                          <td>d.wilder@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica</td>
+                          <td>Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2009/10/09</td>
+                          <td>$1,200,000</td>
+                          <td>5797</td>
+                          <td>a.ramos@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin</td>
+                          <td>Joyce</td>
+                          <td>Developer</td>
+                          <td>Edinburgh</td>
+                          <td>42</td>
+                          <td>2010/12/22</td>
+                          <td>$92,575</td>
+                          <td>8822</td>
+                          <td>g.joyce@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer</td>
+                          <td>Chang</td>
+                          <td>Regional Director</td>
+                          <td>Singapore</td>
+                          <td>28</td>
+                          <td>2010/11/14</td>
+                          <td>$357,650</td>
+                          <td>9239</td>
+                          <td>j.chang@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Brenden</td>
+                          <td>Wagner</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>28</td>
+                          <td>2011/06/07</td>
+                          <td>$206,850</td>
+                          <td>1314</td>
+                          <td>b.wagner@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Fiona</td>
+                          <td>Green</td>
+                          <td>Chief Operating Officer (COO)</td>
+                          <td>San Francisco</td>
+                          <td>48</td>
+                          <td>2010/03/11</td>
+                          <td>$850,000</td>
+                          <td>2947</td>
+                          <td>f.green@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Shou</td>
+                          <td>Itou</td>
+                          <td>Regional Marketing</td>
+                          <td>Tokyo</td>
+                          <td>20</td>
+                          <td>2011/08/14</td>
+                          <td>$163,000</td>
+                          <td>8899</td>
+                          <td>s.itou@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Michelle</td>
+                          <td>House</td>
+                          <td>Integration Specialist</td>
+                          <td>Sidney</td>
+                          <td>37</td>
+                          <td>2011/06/02</td>
+                          <td>$95,400</td>
+                          <td>2769</td>
+                          <td>m.house@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Suki</td>
+                          <td>Burks</td>
+                          <td>Developer</td>
+                          <td>London</td>
+                          <td>53</td>
+                          <td>2009/10/22</td>
+                          <td>$114,500</td>
+                          <td>6832</td>
+                          <td>s.burks@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Prescott</td>
+                          <td>Bartlett</td>
+                          <td>Technical Author</td>
+                          <td>London</td>
+                          <td>27</td>
+                          <td>2011/05/07</td>
+                          <td>$145,000</td>
+                          <td>3606</td>
+                          <td>p.bartlett@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin</td>
+                          <td>Cortez</td>
+                          <td>Team Leader</td>
+                          <td>San Francisco</td>
+                          <td>22</td>
+                          <td>2008/10/26</td>
+                          <td>$235,500</td>
+                          <td>2860</td>
+                          <td>g.cortez@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Martena</td>
+                          <td>Mccray</td>
+                          <td>Post-Sales support</td>
+                          <td>Edinburgh</td>
+                          <td>46</td>
+                          <td>2011/03/09</td>
+                          <td>$324,050</td>
+                          <td>8240</td>
+                          <td>m.mccray@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Unity</td>
+                          <td>Butler</td>
+                          <td>Marketing Designer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/12/09</td>
+                          <td>$85,675</td>
+                          <td>5384</td>
+                          <td>u.butler@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Howard</td>
+                          <td>Hatfield</td>
+                          <td>Office Manager</td>
+                          <td>San Francisco</td>
+                          <td>51</td>
+                          <td>2008/12/16</td>
+                          <td>$164,500</td>
+                          <td>7031</td>
+                          <td>h.hatfield@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Hope</td>
+                          <td>Fuentes</td>
+                          <td>Secretary</td>
+                          <td>San Francisco</td>
+                          <td>41</td>
+                          <td>2010/02/12</td>
+                          <td>$109,850</td>
+                          <td>6318</td>
+                          <td>h.fuentes@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Vivian</td>
+                          <td>Harrell</td>
+                          <td>Financial Controller</td>
+                          <td>San Francisco</td>
+                          <td>62</td>
+                          <td>2009/02/14</td>
+                          <td>$452,500</td>
+                          <td>9422</td>
+                          <td>v.harrell@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Timothy</td>
+                          <td>Mooney</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>37</td>
+                          <td>2008/12/11</td>
+                          <td>$136,200</td>
+                          <td>7580</td>
+                          <td>t.mooney@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jackson</td>
+                          <td>Bradshaw</td>
+                          <td>Director</td>
+                          <td>New York</td>
+                          <td>65</td>
+                          <td>2008/09/26</td>
+                          <td>$645,750</td>
+                          <td>1042</td>
+                          <td>j.bradshaw@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Olivia</td>
+                          <td>Liang</td>
+                          <td>Support Engineer</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2011/02/03</td>
+                          <td>$234,500</td>
+                          <td>2120</td>
+                          <td>o.liang@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Bruno</td>
+                          <td>Nash</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>38</td>
+                          <td>2011/05/03</td>
+                          <td>$163,500</td>
+                          <td>6222</td>
+                          <td>b.nash@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Sakura</td>
+                          <td>Yamamoto</td>
+                          <td>Support Engineer</td>
+                          <td>Tokyo</td>
+                          <td>37</td>
+                          <td>2009/08/19</td>
+                          <td>$139,575</td>
+                          <td>9383</td>
+                          <td>s.yamamoto@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Thor</td>
+                          <td>Walton</td>
+                          <td>Developer</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2013/08/11</td>
+                          <td>$98,540</td>
+                          <td>8327</td>
+                          <td>t.walton@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Finn</td>
+                          <td>Camacho</td>
+                          <td>Support Engineer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/07/07</td>
+                          <td>$87,500</td>
+                          <td>2927</td>
+                          <td>f.camacho@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Serge</td>
+                          <td>Baldwin</td>
+                          <td>Data Coordinator</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2012/04/09</td>
+                          <td>$138,575</td>
+                          <td>8352</td>
+                          <td>s.baldwin@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Zenaida</td>
+                          <td>Frank</td>
+                          <td>Software Engineer</td>
+                          <td>New York</td>
+                          <td>63</td>
+                          <td>2010/01/04</td>
+                          <td>$125,250</td>
+                          <td>7439</td>
+                          <td>z.frank@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Zorita</td>
+                          <td>Serrano</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>56</td>
+                          <td>2012/06/01</td>
+                          <td>$115,000</td>
+                          <td>4389</td>
+                          <td>z.serrano@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer</td>
+                          <td>Acosta</td>
+                          <td>Junior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>43</td>
+                          <td>2013/02/01</td>
+                          <td>$75,650</td>
+                          <td>3431</td>
+                          <td>j.acosta@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Cara</td>
+                          <td>Stevens</td>
+                          <td>Sales Assistant</td>
+                          <td>New York</td>
+                          <td>46</td>
+                          <td>2011/12/06</td>
+                          <td>$145,600</td>
+                          <td>3990</td>
+                          <td>c.stevens@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Hermione</td>
+                          <td>Butler</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2011/03/21</td>
+                          <td>$356,250</td>
+                          <td>1016</td>
+                          <td>h.butler@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Lael</td>
+                          <td>Greer</td>
+                          <td>Systems Administrator</td>
+                          <td>London</td>
+                          <td>21</td>
+                          <td>2009/02/27</td>
+                          <td>$103,500</td>
+                          <td>6733</td>
+                          <td>l.greer@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Jonas</td>
+                          <td>Alexander</td>
+                          <td>Developer</td>
+                          <td>San Francisco</td>
+                          <td>30</td>
+                          <td>2010/07/14</td>
+                          <td>$86,500</td>
+                          <td>8196</td>
+                          <td>j.alexander@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Shad</td>
+                          <td>Decker</td>
+                          <td>Regional Director</td>
+                          <td>Edinburgh</td>
+                          <td>51</td>
+                          <td>2008/11/13</td>
+                          <td>$183,000</td>
+                          <td>6373</td>
+                          <td>s.decker@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Michael</td>
+                          <td>Bruce</td>
+                          <td>Javascript Developer</td>
+                          <td>Singapore</td>
+                          <td>29</td>
+                          <td>2011/06/27</td>
+                          <td>$183,000</td>
+                          <td>5384</td>
+                          <td>m.bruce@datatables.net</td>
+                        </tr>
+                        <tr>
+                          <td>Donna</td>
+                          <td>Snider</td>
+                          <td>Customer Support</td>
+                          <td>New York</td>
+                          <td>27</td>
+                          <td>2011/01/25</td>
+                          <td>$112,000</td>
+                          <td>4226</td>
+                          <td>d.snider@datatables.net</td>
+                        </tr>
+                      </tbody>
+                    </table>
+										</div>
+									</div>
+								</div>
+
+								
+
+			<div class="footer">
+				<div class="footer-inner">
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">2COPY</span>
+							Applicación &copy; 2017-2018
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		<script src="assets/js/jquery.dataTables.min.js"></script>
+		<script src="assets/js/jquery.dataTables.bootstrap.min.js"></script>
+		<script src="assets/js/dataTables.buttons.min.js"></script>
+		<script src="assets/js/buttons.flash.min.js"></script>
+		<script src="assets/js/buttons.html5.min.js"></script>
+		<script src="assets/js/buttons.print.min.js"></script>
+		<script src="assets/js/buttons.colVis.min.js"></script>
+		<script src="assets/js/dataTables.select.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				//initiate dataTables plugin
+				var myTable = 
+				$('#dynamic-table')
+				//.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+				.DataTable( {
+					bAutoWidth: false,
+					"aoColumns": [
+					  { "bSortable": false },
+					  null, null,null, null, null,
+					  { "bSortable": false }
+					],
+					"aaSorting": [],
+					
+					
+					//"bProcessing": true,
+			        //"bServerSide": true,
+			        //"sAjaxSource": "http://127.0.0.1/table.php"	,
+			
+					//,
+					//"sScrollY": "200px",
+					//"bPaginate": false,
+			
+					//"sScrollX": "100%",
+					//"sScrollXInner": "120%",
+					//"bScrollCollapse": true,
+					//Note: if you are applying horizontal scrolling (sScrollX) on a ".table-bordered"
+					//you may want to wrap the table inside a "div.dataTables_borderWrap" element
+			
+					//"iDisplayLength": 50
+			
+			
+					select: {
+						style: 'multi'
+					}
+			    } );
+			
+				
+				
+				$.fn.dataTable.Buttons.defaults.dom.container.className = 'dt-buttons btn-overlap btn-group btn-overlap';
+				
+				new $.fn.dataTable.Buttons( myTable, {
+					buttons: [
+					  {
+						"extend": "colvis",
+						"text": "<i class='fa fa-search bigger-110 blue'></i> <span class='hidden'>Show/hide columns</span>",
+						"className": "btn btn-white btn-primary btn-bold",
+						columns: ':not(:first):not(:last)'
+					  },
+					  {
+						"extend": "copy",
+						"text": "<i class='fa fa-copy bigger-110 pink'></i> <span class='hidden'>Copy to clipboard</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "csv",
+						"text": "<i class='fa fa-database bigger-110 orange'></i> <span class='hidden'>Export to CSV</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "excel",
+						"text": "<i class='fa fa-file-excel-o bigger-110 green'></i> <span class='hidden'>Export to Excel</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "pdf",
+						"text": "<i class='fa fa-file-pdf-o bigger-110 red'></i> <span class='hidden'>Export to PDF</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "print",
+						"text": "<i class='fa fa-print bigger-110 grey'></i> <span class='hidden'>Print</span>",
+						"className": "btn btn-white btn-primary btn-bold",
+						autoPrint: false,
+						message: 'This print was produced using the Print button for DataTables'
+					  }		  
+					]
+				} );
+				myTable.buttons().container().appendTo( $('.tableTools-container') );
+				
+				//style the message box
+				var defaultCopyAction = myTable.button(1).action();
+				myTable.button(1).action(function (e, dt, button, config) {
+					defaultCopyAction(e, dt, button, config);
+					$('.dt-button-info').addClass('gritter-item-wrapper gritter-info gritter-center white');
+				});
+				
+				
+				var defaultColvisAction = myTable.button(0).action();
+				myTable.button(0).action(function (e, dt, button, config) {
+					
+					defaultColvisAction(e, dt, button, config);
+					
+					
+					if($('.dt-button-collection > .dropdown-menu').length == 0) {
+						$('.dt-button-collection')
+						.wrapInner('<ul class="dropdown-menu dropdown-light dropdown-caret dropdown-caret" />')
+						.find('a').attr('href', '#').wrap("<li />")
+					}
+					$('.dt-button-collection').appendTo('.tableTools-container .dt-buttons')
+				});
+			
+				////
+			
+				setTimeout(function() {
+					$($('.tableTools-container')).find('a.dt-button').each(function() {
+						var div = $(this).find(' > div').first();
+						if(div.length == 1) div.tooltip({container: 'body', title: div.parent().text()});
+						else $(this).tooltip({container: 'body', title: $(this).text()});
+					});
+				}, 500);
+				
+				
+				
+				
+				
+				myTable.on( 'select', function ( e, dt, type, index ) {
+					if ( type === 'row' ) {
+						$( myTable.row( index ).node() ).find('input:checkbox').prop('checked', true);
+					}
+				} );
+				myTable.on( 'deselect', function ( e, dt, type, index ) {
+					if ( type === 'row' ) {
+						$( myTable.row( index ).node() ).find('input:checkbox').prop('checked', false);
+					}
+				} );
+			
+			
+			
+			
+				/////////////////////////////////
+				//table checkboxes
+				$('th input[type=checkbox], td input[type=checkbox]').prop('checked', false);
+				
+				//select/deselect all rows according to table header checkbox
+				$('#dynamic-table > thead > tr > th input[type=checkbox], #dynamic-table_wrapper input[type=checkbox]').eq(0).on('click', function(){
+					var th_checked = this.checked;//checkbox inside "TH" table header
+					
+					$('#dynamic-table').find('tbody > tr').each(function(){
+						var row = this;
+						if(th_checked) myTable.row(row).select();
+						else  myTable.row(row).deselect();
+					});
+				});
+				
+				//select/deselect a row when the checkbox is checked/unchecked
+				$('#dynamic-table').on('click', 'td input[type=checkbox]' , function(){
+					var row = $(this).closest('tr').get(0);
+					if(this.checked) myTable.row(row).deselect();
+					else myTable.row(row).select();
+				});
+			
+			
+			
+				$(document).on('click', '#dynamic-table .dropdown-toggle', function(e) {
+					e.stopImmediatePropagation();
+					e.stopPropagation();
+					e.preventDefault();
+				});
+				
+				
+				
+				//And for the first simple table, which doesn't have TableTools or dataTables
+				//select/deselect all rows according to table header checkbox
+				var active_class = 'active';
+				$('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function(){
+					var th_checked = this.checked;//checkbox inside "TH" table header
+					
+					$(this).closest('table').find('tbody > tr').each(function(){
+						var row = this;
+						if(th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
+						else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
+					});
+				});
+				
+				//select/deselect a row when the checkbox is checked/unchecked
+				$('#simple-table').on('click', 'td input[type=checkbox]' , function(){
+					var $row = $(this).closest('tr');
+					if($row.is('.detail-row ')) return;
+					if(this.checked) $row.addClass(active_class);
+					else $row.removeClass(active_class);
+				});
+			
+				
+			
+				/********************************/
+				//add tooltip for small view action buttons in dropdown menu
+				$('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				
+				//tooltip placement on right or left
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('table')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					//var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+				
+				
+				
+				
+				/***************/
+				$('.show-details-btn').on('click', function(e) {
+					e.preventDefault();
+					$(this).closest('tr').next().toggleClass('open');
+					$(this).find(ace.vars['.icon']).toggleClass('fa-angle-double-down').toggleClass('fa-angle-double-up');
+				});
+				/***************/
+				
+				
+				
+				
+				
+				/**
+				//add horizontal scrollbars to a simple table
+				$('#simple-table').css({'width':'2000px', 'max-width': 'none'}).wrap('<div style="width: 1000px;" />').parent().ace_scroll(
+				  {
+					horizontal: true,
+					styleClass: 'scroll-top scroll-dark scroll-visible',//show the scrollbars on top(default is bottom)
+					size: 2000,
+					mouseWheelLock: true
+				  }
+				).css('padding-top', '12px');
+				*/
+			
+			
+			})
+		</script>
+	<!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+		
+
+	<!-- Nuevos Scritps web local -->
+	<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		<script src="assets/js/jquery.dataTables.min.js"></script>
+		<script src="assets/js/jquery.dataTables.bootstrap.min.js"></script>
+		<script src="assets/js/dataTables.buttons.min.js"></script>
+		<script src="assets/js/buttons.flash.min.js"></script>
+		<script src="assets/js/buttons.html5.min.js"></script>
+		<script src="assets/js/buttons.print.min.js"></script>
+		<script src="assets/js/buttons.colVis.min.js"></script>
+		<script src="assets/js/dataTables.select.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				//initiate dataTables plugin
+				var myTable = 
+				$('#dynamic-table')
+				//.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+				.DataTable( {
+					bAutoWidth: false,
+					"aoColumns": [
+					  { "bSortable": false },
+					  null, null,null, null, null,
+					  { "bSortable": false }
+					],
+					"aaSorting": [],
+					
+					
+					//"bProcessing": true,
+			        //"bServerSide": true,
+			        //"sAjaxSource": "http://127.0.0.1/table.php"	,
+			
+					//,
+					//"sScrollY": "200px",
+					//"bPaginate": false,
+			
+					//"sScrollX": "100%",
+					//"sScrollXInner": "120%",
+					//"bScrollCollapse": true,
+					//Note: if you are applying horizontal scrolling (sScrollX) on a ".table-bordered"
+					//you may want to wrap the table inside a "div.dataTables_borderWrap" element
+			
+					//"iDisplayLength": 50
+			
+			
+					select: {
+						style: 'multi'
+					}
+			    } );
+			
+				
+				
+				$.fn.dataTable.Buttons.defaults.dom.container.className = 'dt-buttons btn-overlap btn-group btn-overlap';
+				
+				new $.fn.dataTable.Buttons( myTable, {
+					buttons: [
+					  {
+						"extend": "colvis",
+						"text": "<i class='fa fa-search bigger-110 blue'></i> <span class='hidden'>Show/hide columns</span>",
+						"className": "btn btn-white btn-primary btn-bold",
+						columns: ':not(:first):not(:last)'
+					  },
+					  {
+						"extend": "copy",
+						"text": "<i class='fa fa-copy bigger-110 pink'></i> <span class='hidden'>Copy to clipboard</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "csv",
+						"text": "<i class='fa fa-database bigger-110 orange'></i> <span class='hidden'>Export to CSV</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "excel",
+						"text": "<i class='fa fa-file-excel-o bigger-110 green'></i> <span class='hidden'>Export to Excel</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "pdf",
+						"text": "<i class='fa fa-file-pdf-o bigger-110 red'></i> <span class='hidden'>Export to PDF</span>",
+						"className": "btn btn-white btn-primary btn-bold"
+					  },
+					  {
+						"extend": "print",
+						"text": "<i class='fa fa-print bigger-110 grey'></i> <span class='hidden'>Print</span>",
+						"className": "btn btn-white btn-primary btn-bold",
+						autoPrint: false,
+						message: 'This print was produced using the Print button for DataTables'
+					  }		  
+					]
+				} );
+				myTable.buttons().container().appendTo( $('.tableTools-container') );
+				
+				//style the message box
+				var defaultCopyAction = myTable.button(1).action();
+				myTable.button(1).action(function (e, dt, button, config) {
+					defaultCopyAction(e, dt, button, config);
+					$('.dt-button-info').addClass('gritter-item-wrapper gritter-info gritter-center white');
+				});
+				
+				
+				var defaultColvisAction = myTable.button(0).action();
+				myTable.button(0).action(function (e, dt, button, config) {
+					
+					defaultColvisAction(e, dt, button, config);
+					
+					
+					if($('.dt-button-collection > .dropdown-menu').length == 0) {
+						$('.dt-button-collection')
+						.wrapInner('<ul class="dropdown-menu dropdown-light dropdown-caret dropdown-caret" />')
+						.find('a').attr('href', '#').wrap("<li />")
+					}
+					$('.dt-button-collection').appendTo('.tableTools-container .dt-buttons')
+				});
+			
+				////
+			
+				setTimeout(function() {
+					$($('.tableTools-container')).find('a.dt-button').each(function() {
+						var div = $(this).find(' > div').first();
+						if(div.length == 1) div.tooltip({container: 'body', title: div.parent().text()});
+						else $(this).tooltip({container: 'body', title: $(this).text()});
+					});
+				}, 500);
+				
+				
+				
+				
+				
+				myTable.on( 'select', function ( e, dt, type, index ) {
+					if ( type === 'row' ) {
+						$( myTable.row( index ).node() ).find('input:checkbox').prop('checked', true);
+					}
+				} );
+				myTable.on( 'deselect', function ( e, dt, type, index ) {
+					if ( type === 'row' ) {
+						$( myTable.row( index ).node() ).find('input:checkbox').prop('checked', false);
+					}
+				} );
+			
+			
+			
+			
+				/////////////////////////////////
+				//table checkboxes
+				$('th input[type=checkbox], td input[type=checkbox]').prop('checked', false);
+				
+				//select/deselect all rows according to table header checkbox
+				$('#dynamic-table > thead > tr > th input[type=checkbox], #dynamic-table_wrapper input[type=checkbox]').eq(0).on('click', function(){
+					var th_checked = this.checked;//checkbox inside "TH" table header
+					
+					$('#dynamic-table').find('tbody > tr').each(function(){
+						var row = this;
+						if(th_checked) myTable.row(row).select();
+						else  myTable.row(row).deselect();
+					});
+				});
+				
+				//select/deselect a row when the checkbox is checked/unchecked
+				$('#dynamic-table').on('click', 'td input[type=checkbox]' , function(){
+					var row = $(this).closest('tr').get(0);
+					if(this.checked) myTable.row(row).deselect();
+					else myTable.row(row).select();
+				});
+			
+			
+			
+				$(document).on('click', '#dynamic-table .dropdown-toggle', function(e) {
+					e.stopImmediatePropagation();
+					e.stopPropagation();
+					e.preventDefault();
+				});
+				
+				
+				
+				//And for the first simple table, which doesn't have TableTools or dataTables
+				//select/deselect all rows according to table header checkbox
+				var active_class = 'active';
+				$('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function(){
+					var th_checked = this.checked;//checkbox inside "TH" table header
+					
+					$(this).closest('table').find('tbody > tr').each(function(){
+						var row = this;
+						if(th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
+						else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
+					});
+				});
+				
+				//select/deselect a row when the checkbox is checked/unchecked
+				$('#simple-table').on('click', 'td input[type=checkbox]' , function(){
+					var $row = $(this).closest('tr');
+					if($row.is('.detail-row ')) return;
+					if(this.checked) $row.addClass(active_class);
+					else $row.removeClass(active_class);
+				});
+			
+				
+			
+				/********************************/
+				//add tooltip for small view action buttons in dropdown menu
+				$('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				
+				//tooltip placement on right or left
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('table')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					//var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+				
+				
+				
+				
+				/***************/
+				$('.show-details-btn').on('click', function(e) {
+					e.preventDefault();
+					$(this).closest('tr').next().toggleClass('open');
+					$(this).find(ace.vars['.icon']).toggleClass('fa-angle-double-down').toggleClass('fa-angle-double-up');
+				});
+				/***************/
+				
+				
+				
+				
+				
+				/**
+				//add horizontal scrollbars to a simple table
+				$('#simple-table').css({'width':'2000px', 'max-width': 'none'}).wrap('<div style="width: 1000px;" />').parent().ace_scroll(
+				  {
+					horizontal: true,
+					styleClass: 'scroll-top scroll-dark scroll-visible',//show the scrollbars on top(default is bottom)
+					size: 2000,
+					mouseWheelLock: true
+				  }
+				).css('padding-top', '12px');
+				*/
+			
+			
+			})
+		</script>		
+	</body>
+</html>
